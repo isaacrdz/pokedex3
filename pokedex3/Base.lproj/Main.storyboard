@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pokedex3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQj-Jr-zp9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Ljj-9c-rrH"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RwJ-2T-xVE">
+                                <rect key="frame" x="0.0" y="65" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LSv-wl-OPQ"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="vI8-ly-TeX">
+                                <rect key="frame" x="0.0" y="109" width="375" height="558"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NQj-Jr-zp9" secondAttribute="trailing" id="5TI-TG-Gis"/>
+                            <constraint firstItem="NQj-Jr-zp9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E5Z-4A-ii7"/>
+                            <constraint firstItem="NQj-Jr-zp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JXo-Zr-ED7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vI8-ly-TeX" secondAttribute="bottom" id="Wak-5r-fD9"/>
+                            <constraint firstItem="vI8-ly-TeX" firstAttribute="top" secondItem="RwJ-2T-xVE" secondAttribute="bottom" id="ffe-7n-cyC"/>
+                            <constraint firstItem="RwJ-2T-xVE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="g2j-nM-MkN"/>
+                            <constraint firstAttribute="trailing" secondItem="RwJ-2T-xVE" secondAttribute="trailing" id="gOi-14-129"/>
+                            <constraint firstItem="RwJ-2T-xVE" firstAttribute="top" secondItem="NQj-Jr-zp9" secondAttribute="bottom" id="oOI-wA-QPs"/>
+                            <constraint firstAttribute="trailing" secondItem="vI8-ly-TeX" secondAttribute="trailing" id="qNU-bh-R4m"/>
+                            <constraint firstItem="vI8-ly-TeX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rA5-Mc-cI0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1920" height="1080"/>
+    </resources>
 </document>
