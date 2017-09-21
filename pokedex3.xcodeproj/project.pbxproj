@@ -16,6 +16,9 @@
 		1403BB431F71E6F60029DC35 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403BB421F71E6F60029DC35 /* Pokemon.swift */; };
 		1403BB471F72D9380029DC35 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403BB461F72D9380029DC35 /* PokeCell.swift */; };
 		1403BB4A1F72EDD50029DC35 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403BB491F72EDD50029DC35 /* csv.swift */; };
+		1403BB4C1F732E8B0029DC35 /* Pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1403BB4B1F732E8B0029DC35 /* Pokemon.ttf */; };
+		1403BB511F73368A0029DC35 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 1403BB501F73368A0029DC35 /* music.png */; };
+		1403BB531F7337320029DC35 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1403BB521F7337320029DC35 /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		1403BB421F71E6F60029DC35 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		1403BB461F72D9380029DC35 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		1403BB491F72EDD50029DC35 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		1403BB4B1F732E8B0029DC35 /* Pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pokemon.ttf; sourceTree = "<group>"; };
+		1403BB501F73368A0029DC35 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		1403BB521F7337320029DC35 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +68,14 @@
 		1403BB2C1F71CD950029DC35 /* pokedex3 */ = {
 			isa = PBXGroup;
 			children = (
-				1403BB481F72D9490029DC35 /* View */,
 				1403BB411F71E6CF0029DC35 /* Model */,
+				1403BB481F72D9490029DC35 /* View */,
+				1403BB4D1F732ED50029DC35 /* Controller */,
+				1403BB4F1F7333A60029DC35 /* Util */,
+				1403BB4E1F7332A30029DC35 /* Resources */,
 				1403BB2D1F71CD950029DC35 /* AppDelegate.swift */,
-				1403BB2F1F71CD950029DC35 /* ViewController.swift */,
 				1403BB311F71CD950029DC35 /* Main.storyboard */,
 				1403BB341F71CD950029DC35 /* Assets.xcassets */,
-				1403BB3F1F71DFCE0029DC35 /* pokemon.csv */,
-				1403BB491F72EDD50029DC35 /* csv.swift */,
 				1403BB361F71CD950029DC35 /* LaunchScreen.storyboard */,
 				1403BB391F71CD950029DC35 /* Info.plist */,
 			);
@@ -90,6 +96,33 @@
 				1403BB461F72D9380029DC35 /* PokeCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		1403BB4D1F732ED50029DC35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1403BB2F1F71CD950029DC35 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1403BB4E1F7332A30029DC35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1403BB521F7337320029DC35 /* music.mp3 */,
+				1403BB501F73368A0029DC35 /* music.png */,
+				1403BB4B1F732E8B0029DC35 /* Pokemon.ttf */,
+				1403BB3F1F71DFCE0029DC35 /* pokemon.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1403BB4F1F7333A60029DC35 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1403BB491F72EDD50029DC35 /* csv.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +186,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1403BB4C1F732E8B0029DC35 /* Pokemon.ttf in Resources */,
 				1403BB381F71CD950029DC35 /* LaunchScreen.storyboard in Resources */,
 				1403BB351F71CD950029DC35 /* Assets.xcassets in Resources */,
 				1403BB401F71DFCE0029DC35 /* pokemon.csv in Resources */,
 				1403BB331F71CD950029DC35 /* Main.storyboard in Resources */,
+				1403BB531F7337320029DC35 /* music.mp3 in Resources */,
+				1403BB511F73368A0029DC35 /* music.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
