@@ -25,21 +25,26 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var currentEvoImage: UIImageView!
     @IBOutlet weak var nextEvoImage: UIImageView!
     @IBOutlet weak var evoLbl: UILabel!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         nameLbl.text = pokemon.name
-
+        pokemon.downloadPokemonDetail{
+            //Whatever we write will only be called after the network called is complete!
+            self.updateUI()
+        }
     }
-
-  
+    func updateUI(){
+        
+    }
+    
     @IBAction func backBtnPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
-
-  
-
+    
+    
+    
 }

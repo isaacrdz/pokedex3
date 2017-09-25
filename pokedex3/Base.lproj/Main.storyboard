@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Pokemon.ttf">
+        <array key="pokemon.ttf">
             <string>PokemonSolidNormal</string>
         </array>
     </customFonts>
@@ -157,7 +157,7 @@
                         <viewControllerLayoutGuide type="top" id="I3K-LZ-z0m"/>
                         <viewControllerLayoutGuide type="bottom" id="7pS-3p-mpu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tSc-T1-7Kh" customClass="Poke">
+                    <view key="view" contentMode="scaleToFill" id="tSc-T1-7Kh" userLabel="View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
